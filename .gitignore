@@ -1,0 +1,19 @@
+# Local config (copy .env.example to .env)
+.env
+
+# Python
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Pretrained COCO weights — Ultralytics downloads these on first run
+backend/yolov8n.pt
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

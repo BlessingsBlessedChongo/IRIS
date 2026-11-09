@@ -1,0 +1,23 @@
+# Web framework / server
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+websockets==17.1
+
+# Config
+pydantic==2.13.5
+pydantic-settings==2.15.0
+python-dotenv==1.2.3
+
+# Vision / ML
+# NOTE: plain "opencv-python" (not opencv-python-headless) on purpose.
+# ultralytics declares opencv-python as a hard dependency; installing the
+# headless variant alongside it results in two overlapping cv2 installs.
+# If deploying to a minimal/headless Linux image, install the OS package
+# `libgl1` (Debian/Ubuntu) so opencv-python's shared libraries resolve.
+opencv-python==4.13.0.92
+numpy==2.5.3
+ultralytics==8.4.53
+onnxruntime==1.25.1
+
+# PLC / MQTT
+paho-mqtt==2.1.0
